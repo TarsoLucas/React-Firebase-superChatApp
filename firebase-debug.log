@@ -1,0 +1,137 @@
+[debug] [2022-06-24T22:59:06.065Z] ----------------------------------------------------------------------
+[debug] [2022-06-24T22:59:06.067Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tarso\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-06-24T22:59:06.067Z] CLI Version:   11.1.0
+[debug] [2022-06-24T22:59:06.067Z] Platform:      win32
+[debug] [2022-06-24T22:59:06.067Z] Node Version:  v16.15.1
+[debug] [2022-06-24T22:59:06.068Z] Time:          Fri Jun 24 2022 19:59:06 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2022-06-24T22:59:06.068Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-24T22:59:06.075Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-24T22:59:06.076Z] > authorizing via signed-in user (tarsolucas@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\tarso\Documents\superchat
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-06-24T23:00:03.460Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-06-24T23:00:04.117Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-06-24T23:00:04.118Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project superchat-tarso (Superchat-Tarso) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-06-24T23:00:06.266Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-06-24T23:00:07.524Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/firebasedatabase.googleapis.com 200
+[debug] [2022-06-24T23:00:07.524Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2022-06-24T23:00:07.525Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2022-06-24T23:00:09.148Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2022-06-24T23:00:09.148Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2022-06-24T23:00:19.159Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-06-24T23:00:20.308Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/firebasedatabase.googleapis.com 200
+[debug] [2022-06-24T23:00:20.308Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-06-24T23:00:20.312Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/superchat-tarso [none]
+[debug] [2022-06-24T23:00:21.497Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/superchat-tarso 200
+[debug] [2022-06-24T23:00:21.497Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/superchat-tarso {"projectId":"superchat-tarso","projectNumber":"810633069201","displayName":"Superchat-Tarso","name":"projects/superchat-tarso","resources":{"hostingSite":"superchat-tarso","storageBucket":"superchat-tarso.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2022-06-24T23:00:29.447Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/superchat-tarso/locations/us-central1/instances databaseId=superchat-tarso-default-rtdb&validateOnly=true
+[debug] [2022-06-24T23:00:29.447Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/superchat-tarso/locations/us-central1/instances {"type":"default_database"}
+[debug] [2022-06-24T23:00:30.861Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/superchat-tarso/locations/us-central1/instances 200
+[debug] [2022-06-24T23:00:30.861Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/superchat-tarso/locations/us-central1/instances {"name":"projects/810633069201/locations/us-central1/instances/superchat-tarso-default-rtdb","project":"projects/810633069201","databaseUrl":"https://superchat-tarso-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2022-06-24T23:00:30.862Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/superchat-tarso/locations/us-central1/instances databaseId=superchat-tarso-default-rtdb
+[debug] [2022-06-24T23:00:30.862Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/superchat-tarso/locations/us-central1/instances {"type":"default_database"}
+[debug] [2022-06-24T23:00:32.500Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/superchat-tarso/locations/us-central1/instances 200
+[debug] [2022-06-24T23:00:32.500Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/superchat-tarso/locations/us-central1/instances {"name":"projects/810633069201/locations/us-central1/instances/superchat-tarso-default-rtdb","project":"projects/810633069201","databaseUrl":"https://superchat-tarso-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2022-06-24T23:00:39.168Z] >>> [apiv2][query] GET https://superchat-tarso-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2022-06-24T23:00:40.393Z] <<< [apiv2][status] GET https://superchat-tarso-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2022-06-24T23:00:40.393Z] <<< [apiv2][body] GET https://superchat-tarso-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for superchat-tarso-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2022-06-24T23:00:40.398Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/firestore.googleapis.com [none]
+[debug] [2022-06-24T23:00:41.558Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/firestore.googleapis.com 200
+[debug] [2022-06-24T23:00:41.558Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/firestore.googleapis.com [omitted]
+[debug] [2022-06-24T23:00:41.559Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/superchat-tarso [none]
+[debug] [2022-06-24T23:00:42.185Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/superchat-tarso 200
+[debug] [2022-06-24T23:00:42.186Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/superchat-tarso {"name":"apps/superchat-tarso","id":"superchat-tarso","authDomain":"gmail.com","locationId":"us-central","codeBucket":"staging.superchat-tarso.appspot.com","servingStatus":"SERVING","defaultHostname":"superchat-tarso.uc.r.appspot.com","defaultBucket":"superchat-tarso.appspot.com","serviceAccount":"superchat-tarso@appspot.gserviceaccount.com","gcrDomain":"us.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2022-06-24T23:00:42.186Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-06-24T23:00:42.186Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-24T23:00:42.186Z] > authorizing via signed-in user (tarsolucas@gmail.com)
+[debug] [2022-06-24T23:00:42.186Z] [iam] checking project superchat-tarso for permissions ["firebase.projects.get"]
+[debug] [2022-06-24T23:00:42.186Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-tarso:testIamPermissions [none]
+[debug] [2022-06-24T23:00:42.187Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-tarso:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-06-24T23:00:43.239Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-tarso:testIamPermissions 200
+[debug] [2022-06-24T23:00:43.239Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-tarso:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-06-24T23:00:49.618Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/superchat-tarso/releases pageSize=10&pageToken=
+[debug] [2022-06-24T23:00:50.764Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/superchat-tarso/releases 200
+[debug] [2022-06-24T23:00:50.764Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/superchat-tarso/releases {"releases":[{"name":"projects/superchat-tarso/releases/cloud.firestore","rulesetName":"projects/superchat-tarso/rulesets/31048f3b-a749-4b19-afe0-1a9393734f8c","createTime":"2022-06-24T19:16:19.361014Z","updateTime":"2022-06-24T22:07:44.041437Z"}]}
+[debug] [2022-06-24T23:00:50.765Z] Found ruleset: projects/superchat-tarso/rulesets/31048f3b-a749-4b19-afe0-1a9393734f8c
+[debug] [2022-06-24T23:00:50.765Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/superchat-tarso/rulesets/31048f3b-a749-4b19-afe0-1a9393734f8c [none]
+[debug] [2022-06-24T23:00:51.856Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/superchat-tarso/rulesets/31048f3b-a749-4b19-afe0-1a9393734f8c 200
+[debug] [2022-06-24T23:00:51.856Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/superchat-tarso/rulesets/31048f3b-a749-4b19-afe0-1a9393734f8c [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-06-24T23:00:53.908Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/superchat-tarso/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2022-06-24T23:00:53.909Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/superchat-tarso/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false [none]
+[debug] [2022-06-24T23:00:54.447Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/superchat-tarso/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2022-06-24T23:00:54.447Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/superchat-tarso/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2022-06-24T23:00:54.468Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/superchat-tarso/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false 200
+[debug] [2022-06-24T23:00:54.468Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/superchat-tarso/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false {"fields":[{"name":"projects/superchat-tarso/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2022-06-24T23:00:54.471Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-24T23:00:54.471Z] > authorizing via signed-in user (tarsolucas@gmail.com)
+[debug] [2022-06-24T23:00:54.471Z] [iam] checking project superchat-tarso for permissions ["firebase.projects.get"]
+[debug] [2022-06-24T23:00:54.471Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-tarso:testIamPermissions [none]
+[debug] [2022-06-24T23:00:54.471Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-tarso:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-06-24T23:00:55.467Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-tarso:testIamPermissions 200
+[debug] [2022-06-24T23:00:55.467Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-tarso:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-06-24T23:00:55.467Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-06-24T23:00:55.468Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-06-24T23:00:56.617Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/runtimeconfig.googleapis.com 200
+[debug] [2022-06-24T23:00:56.617Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2022-06-24T23:00:56.619Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/cloudfunctions.googleapis.com 200
+[debug] [2022-06-24T23:00:56.619Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2022-06-24T23:00:56.619Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2022-06-24T23:00:58.204Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2022-06-24T23:00:58.204Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2022-06-24T23:01:08.216Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-06-24T23:01:09.428Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/cloudfunctions.googleapis.com 200
+[debug] [2022-06-24T23:01:09.428Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/superchat-tarso/services/cloudfunctions.googleapis.com [omitted]
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
