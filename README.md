@@ -9,3 +9,5 @@ Stuying a chat web app project from youtuber Fireship! 🔥
   - multiple chat rooms 📫 
   - bad-words filter (en-US/pt-BR)
   - image uploading 📎
+  - message exclusion
+  - display message timestamp
