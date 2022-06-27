@@ -1,6 +1,7 @@
 # SuperChat-Tarso-Fireship
 
 Stuying a chat web app project from youtuber Fireship! 🔥
+Created with ReactJs, Css and Firebase.
 
 ## THE PROJECT IS CURRENTLY NOT DEPLOYED 
  This is because firebase no longer supports node 10 engine and cloud functions in the spark (free of charge) plan.
